@@ -17,4 +17,11 @@ for i in d:
 
 results = {"data": data}
 results = json.dumps(results, ensure_ascii=False)
-print(results)
+""" standard ouput print """
+# print(results)
+
+"""
+create a file result.txt into the same folder
+"""
+with open('results.txt', 'w', encoding="utf-8") as file_result:
+    file_result.write(results)
